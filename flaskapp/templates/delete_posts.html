@@ -1,0 +1,27 @@
+{%extends "layout.html"%}
+{%block body%}
+<h2>Dashboard <small>Welcome {{current_user.username }}</small></h2>
+<hr>
+{%for post in posts%}
+<table class="table table-striped">
+<tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Body</th>
+    <th>Date</th>
+</tr>
+<tr>
+    <td>{{post.id}}</td>
+    <td>{{post.title}}</td>
+    <td>{{post.author}}</td>
+    <td>{{post.body | safe}}</td>
+    <td>{{post.pub_date}}</td>
+    <td>
+
+    </td>
+</tr>
+</table>
+{%endfor%}
+
+{%endblock%}

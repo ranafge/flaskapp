@@ -1,0 +1,41 @@
+{%extends "layout.html"%}
+
+{%block body%}
+<h2>Dashboard <small>Welcome {{current_user.username }}</small></h2>
+<a class="btn btn-success" href="/add_posts">Add Article</a>
+<hr>
+{%for post in posts%}
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Body</th>
+        <th>Date</th>
+    </tr>
+    <tr>
+        <td>{{post.id}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.author}}</td>
+        <td>{{post.body | safe}}</td>
+        <td>{{post.pub_date}}</td>
+        <td><a href="edit_post/{{post.id}}" class="btn btn-default pullright">Edit</a></td>
+        <td>
+            <form action="{{url_for('posts.delete_post', id=post.id)}}" method="post">
+            <input class="btn btn-danger" type="submit" value="Delete">
+            </form>
+        </td>
+    </tr>
+</table>
+
+{%endfor%}
+
+{% for page_num in page_paginates.iter_pages() %}
+    {%if page_num%}
+    <a class="btn btn-info mb-4" href="{{url_for('main.home', page=page_num)}}">{{page_num}}</a>
+    {%else%}
+    ...
+    {% endif%}
+{%endfor%}
+
+{%endblock%}
