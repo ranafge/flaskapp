@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/flaskapp/templates/show_posts.html" line="32" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65370f0c-f4e5-415e-92b2-db9ab8c74b3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="65370f0c-f4e5-415e-92b2-db9ab8c74b3e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskapp/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <marker date="1535191261944" expanded="true" signature="424:976" ph="..." />
@@ -560,8 +557,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskapp/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="323">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <marker date="1535191261944" expanded="true" signature="424:976" ph="..." />
