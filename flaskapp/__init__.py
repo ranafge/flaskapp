@@ -5,6 +5,7 @@ from flask_login import LoginManager
 from flask_mail import Mail
 from flaskapp.config import Config
 from flaskapp import config
+from flask_migrate import Migrate
 
 
 db = SQLAlchemy()
@@ -12,6 +13,7 @@ bcrypt = Bcrypt()
 login = LoginManager()
 login.login_view = 'users.login'
 mail = Mail()
+migrate = Migrate()
 
 
 def create_app(config_class=Config):
@@ -22,6 +24,7 @@ def create_app(config_class=Config):
     bcrypt.init_app(app)
     login.init_app(app)
     mail.init_app(app)
+    migrate.init_app(app, db)
 
     from flaskapp.users.routes import users
     from flaskapp.posts.routes import posts
